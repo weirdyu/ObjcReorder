@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B4D6B6223321D9E00273826 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D6B6123321D9E00273826 /* AppDelegate.m */; };
+		3B4D6B6523321D9E00273826 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D6B6423321D9E00273826 /* ViewController.m */; };
+		3B4D6B6823321D9E00273826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4D6B6623321D9E00273826 /* Main.storyboard */; };
+		3B4D6B6A23321D9E00273826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4D6B6923321D9E00273826 /* Assets.xcassets */; };
+		3B4D6B6D23321D9E00273826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4D6B6B23321D9E00273826 /* LaunchScreen.storyboard */; };
+		3B4D6B7023321D9E00273826 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D6B6F23321D9E00273826 /* main.m */; };
+		3B4D6B7A23321D9E00273826 /* ObjcReorderDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D6B7923321D9E00273826 /* ObjcReorderDemoTests.m */; };
+		3B4D6B8523321D9F00273826 /* ObjcReorderDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D6B8423321D9F00273826 /* ObjcReorderDemoUITests.m */; };
+		3B4D6BA023321E2900273826 /* ReorderController+DestinationRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D6B9523321E2900273826 /* ReorderController+DestinationRow.m */; };
+		3B4D6BA123321E2900273826 /* ReorderController+SnapShotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D6B9623321E2900273826 /* ReorderController+SnapShotView.m */; };
+		3B4D6BA223321E2900273826 /* ReorderController+GestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D6B9923321E2900273826 /* ReorderController+GestureRecognizer.m */; };
+		3B4D6BA323321E2900273826 /* ReorderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D6B9A23321E2900273826 /* ReorderController.m */; };
+		3B4D6BA423321E2900273826 /* UITableView+Reorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D6B9C23321E2900273826 /* UITableView+Reorder.m */; };
+		3B4D6BA523321E2900273826 /* ReorderController+AutoScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D6B9E23321E2900273826 /* ReorderController+AutoScroll.m */; };
+		5DC361131CC911029A281BCE /* libPods-ObjcReorderDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D476D639D2D2FD3A1AE3AF4 /* libPods-ObjcReorderDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B4D6B7623321D9E00273826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B4D6B5523321D9E00273826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B4D6B5C23321D9E00273826;
+			remoteInfo = ObjcReorderDemo;
+		};
+		3B4D6B8123321D9F00273826 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B4D6B5523321D9E00273826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B4D6B5C23321D9E00273826;
+			remoteInfo = ObjcReorderDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D476D639D2D2FD3A1AE3AF4 /* libPods-ObjcReorderDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ObjcReorderDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4D6B5D23321D9E00273826 /* ObjcReorderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcReorderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4D6B6023321D9E00273826 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3B4D6B6123321D9E00273826 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3B4D6B6323321D9E00273826 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3B4D6B6423321D9E00273826 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3B4D6B6723321D9E00273826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B4D6B6923321D9E00273826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B4D6B6C23321D9E00273826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B4D6B6E23321D9E00273826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B4D6B6F23321D9E00273826 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B4D6B7523321D9E00273826 /* ObjcReorderDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcReorderDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4D6B7923321D9E00273826 /* ObjcReorderDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcReorderDemoTests.m; sourceTree = "<group>"; };
+		3B4D6B7B23321D9E00273826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B4D6B8023321D9E00273826 /* ObjcReorderDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjcReorderDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4D6B8423321D9F00273826 /* ObjcReorderDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcReorderDemoUITests.m; sourceTree = "<group>"; };
+		3B4D6B8623321D9F00273826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B4D6B9323321E2900273826 /* ReorderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReorderController.h; sourceTree = "<group>"; };
+		3B4D6B9423321E2900273826 /* ObjcReorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcReorder.h; sourceTree = "<group>"; };
+		3B4D6B9523321E2900273826 /* ReorderController+DestinationRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ReorderController+DestinationRow.m"; sourceTree = "<group>"; };
+		3B4D6B9623321E2900273826 /* ReorderController+SnapShotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ReorderController+SnapShotView.m"; sourceTree = "<group>"; };
+		3B4D6B9723321E2900273826 /* ReorderController+AutoScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReorderController+AutoScroll.h"; sourceTree = "<group>"; };
+		3B4D6B9823321E2900273826 /* UITableView+Reorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Reorder.h"; sourceTree = "<group>"; };
+		3B4D6B9923321E2900273826 /* ReorderController+GestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ReorderController+GestureRecognizer.m"; sourceTree = "<group>"; };
+		3B4D6B9A23321E2900273826 /* ReorderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReorderController.m; sourceTree = "<group>"; };
+		3B4D6B9B23321E2900273826 /* ReorderController+DestinationRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReorderController+DestinationRow.h"; sourceTree = "<group>"; };
+		3B4D6B9C23321E2900273826 /* UITableView+Reorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Reorder.m"; sourceTree = "<group>"; };
+		3B4D6B9D23321E2900273826 /* ReorderController+SnapShotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReorderController+SnapShotView.h"; sourceTree = "<group>"; };
+		3B4D6B9E23321E2900273826 /* ReorderController+AutoScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ReorderController+AutoScroll.m"; sourceTree = "<group>"; };
+		3B4D6B9F23321E2900273826 /* ReorderController+GestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReorderController+GestureRecognizer.h"; sourceTree = "<group>"; };
+		7D30A771800C11003A60FAB8 /* Pods-ObjcReorderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcReorderDemo.release.xcconfig"; path = "Target Support Files/Pods-ObjcReorderDemo/Pods-ObjcReorderDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9EABC8656E6A0DBDEC822F5F /* Pods-ObjcReorderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjcReorderDemo.debug.xcconfig"; path = "Target Support Files/Pods-ObjcReorderDemo/Pods-ObjcReorderDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B4D6B5A23321D9E00273826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DC361131CC911029A281BCE /* libPods-ObjcReorderDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4D6B7223321D9E00273826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4D6B7D23321D9E00273826 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B4D6B5423321D9E00273826 = {
+			isa = PBXGroup;
+			children = (
+				3B4D6B9223321E2900273826 /* ObjcReorder */,
+				3B4D6B5F23321D9E00273826 /* ObjcReorderDemo */,
+				3B4D6B7823321D9E00273826 /* ObjcReorderDemoTests */,
+				3B4D6B8323321D9F00273826 /* ObjcReorderDemoUITests */,
+				3B4D6B5E23321D9E00273826 /* Products */,
+				79911715ACA2102990DB6F6A /* Pods */,
+				F9388DE989CC402F3D55C8EA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B4D6B5E23321D9E00273826 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D6B5D23321D9E00273826 /* ObjcReorderDemo.app */,
+				3B4D6B7523321D9E00273826 /* ObjcReorderDemoTests.xctest */,
+				3B4D6B8023321D9E00273826 /* ObjcReorderDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B4D6B5F23321D9E00273826 /* ObjcReorderDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D6B6023321D9E00273826 /* AppDelegate.h */,
+				3B4D6B6123321D9E00273826 /* AppDelegate.m */,
+				3B4D6B6323321D9E00273826 /* ViewController.h */,
+				3B4D6B6423321D9E00273826 /* ViewController.m */,
+				3B4D6B6623321D9E00273826 /* Main.storyboard */,
+				3B4D6B6923321D9E00273826 /* Assets.xcassets */,
+				3B4D6B6B23321D9E00273826 /* LaunchScreen.storyboard */,
+				3B4D6B6E23321D9E00273826 /* Info.plist */,
+				3B4D6B6F23321D9E00273826 /* main.m */,
+			);
+			path = ObjcReorderDemo;
+			sourceTree = "<group>";
+		};
+		3B4D6B7823321D9E00273826 /* ObjcReorderDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D6B7923321D9E00273826 /* ObjcReorderDemoTests.m */,
+				3B4D6B7B23321D9E00273826 /* Info.plist */,
+			);
+			path = ObjcReorderDemoTests;
+			sourceTree = "<group>";
+		};
+		3B4D6B8323321D9F00273826 /* ObjcReorderDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D6B8423321D9F00273826 /* ObjcReorderDemoUITests.m */,
+				3B4D6B8623321D9F00273826 /* Info.plist */,
+			);
+			path = ObjcReorderDemoUITests;
+			sourceTree = "<group>";
+		};
+		3B4D6B9223321E2900273826 /* ObjcReorder */ = {
+			isa = PBXGroup;
+			children = (
+				3B4D6B9323321E2900273826 /* ReorderController.h */,
+				3B4D6B9423321E2900273826 /* ObjcReorder.h */,
+				3B4D6B9523321E2900273826 /* ReorderController+DestinationRow.m */,
+				3B4D6B9623321E2900273826 /* ReorderController+SnapShotView.m */,
+				3B4D6B9723321E2900273826 /* ReorderController+AutoScroll.h */,
+				3B4D6B9823321E2900273826 /* UITableView+Reorder.h */,
+				3B4D6B9923321E2900273826 /* ReorderController+GestureRecognizer.m */,
+				3B4D6B9A23321E2900273826 /* ReorderController.m */,
+				3B4D6B9B23321E2900273826 /* ReorderController+DestinationRow.h */,
+				3B4D6B9C23321E2900273826 /* UITableView+Reorder.m */,
+				3B4D6B9D23321E2900273826 /* ReorderController+SnapShotView.h */,
+				3B4D6B9E23321E2900273826 /* ReorderController+AutoScroll.m */,
+				3B4D6B9F23321E2900273826 /* ReorderController+GestureRecognizer.h */,
+			);
+			path = ObjcReorder;
+			sourceTree = "<group>";
+		};
+		79911715ACA2102990DB6F6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EABC8656E6A0DBDEC822F5F /* Pods-ObjcReorderDemo.debug.xcconfig */,
+				7D30A771800C11003A60FAB8 /* Pods-ObjcReorderDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F9388DE989CC402F3D55C8EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D476D639D2D2FD3A1AE3AF4 /* libPods-ObjcReorderDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B4D6B5C23321D9E00273826 /* ObjcReorderDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B4D6B8923321D9F00273826 /* Build configuration list for PBXNativeTarget "ObjcReorderDemo" */;
+			buildPhases = (
+				EB110E52ED56C03681A395D7 /* [CP] Check Pods Manifest.lock */,
+				3B4D6B5923321D9E00273826 /* Sources */,
+				3B4D6B5A23321D9E00273826 /* Frameworks */,
+				3B4D6B5B23321D9E00273826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjcReorderDemo;
+			productName = ObjcReorderDemo;
+			productReference = 3B4D6B5D23321D9E00273826 /* ObjcReorderDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B4D6B7423321D9E00273826 /* ObjcReorderDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B4D6B8C23321D9F00273826 /* Build configuration list for PBXNativeTarget "ObjcReorderDemoTests" */;
+			buildPhases = (
+				3B4D6B7123321D9E00273826 /* Sources */,
+				3B4D6B7223321D9E00273826 /* Frameworks */,
+				3B4D6B7323321D9E00273826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B4D6B7723321D9E00273826 /* PBXTargetDependency */,
+			);
+			name = ObjcReorderDemoTests;
+			productName = ObjcReorderDemoTests;
+			productReference = 3B4D6B7523321D9E00273826 /* ObjcReorderDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B4D6B7F23321D9E00273826 /* ObjcReorderDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B4D6B8F23321D9F00273826 /* Build configuration list for PBXNativeTarget "ObjcReorderDemoUITests" */;
+			buildPhases = (
+				3B4D6B7C23321D9E00273826 /* Sources */,
+				3B4D6B7D23321D9E00273826 /* Frameworks */,
+				3B4D6B7E23321D9E00273826 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B4D6B8223321D9F00273826 /* PBXTargetDependency */,
+			);
+			name = ObjcReorderDemoUITests;
+			productName = ObjcReorderDemoUITests;
+			productReference = 3B4D6B8023321D9E00273826 /* ObjcReorderDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B4D6B5523321D9E00273826 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = weirdyu;
+				TargetAttributes = {
+					3B4D6B5C23321D9E00273826 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					3B4D6B7423321D9E00273826 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 3B4D6B5C23321D9E00273826;
+					};
+					3B4D6B7F23321D9E00273826 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 3B4D6B5C23321D9E00273826;
+					};
+				};
+			};
+			buildConfigurationList = 3B4D6B5823321D9E00273826 /* Build configuration list for PBXProject "ObjcReorderDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B4D6B5423321D9E00273826;
+			productRefGroup = 3B4D6B5E23321D9E00273826 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B4D6B5C23321D9E00273826 /* ObjcReorderDemo */,
+				3B4D6B7423321D9E00273826 /* ObjcReorderDemoTests */,
+				3B4D6B7F23321D9E00273826 /* ObjcReorderDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B4D6B5B23321D9E00273826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4D6B6D23321D9E00273826 /* LaunchScreen.storyboard in Resources */,
+				3B4D6B6A23321D9E00273826 /* Assets.xcassets in Resources */,
+				3B4D6B6823321D9E00273826 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4D6B7323321D9E00273826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4D6B7E23321D9E00273826 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EB110E52ED56C03681A395D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObjcReorderDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B4D6B5923321D9E00273826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4D6B6523321D9E00273826 /* ViewController.m in Sources */,
+				3B4D6BA223321E2900273826 /* ReorderController+GestureRecognizer.m in Sources */,
+				3B4D6BA023321E2900273826 /* ReorderController+DestinationRow.m in Sources */,
+				3B4D6BA123321E2900273826 /* ReorderController+SnapShotView.m in Sources */,
+				3B4D6BA323321E2900273826 /* ReorderController.m in Sources */,
+				3B4D6B7023321D9E00273826 /* main.m in Sources */,
+				3B4D6BA523321E2900273826 /* ReorderController+AutoScroll.m in Sources */,
+				3B4D6B6223321D9E00273826 /* AppDelegate.m in Sources */,
+				3B4D6BA423321E2900273826 /* UITableView+Reorder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4D6B7123321D9E00273826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4D6B7A23321D9E00273826 /* ObjcReorderDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B4D6B7C23321D9E00273826 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4D6B8523321D9F00273826 /* ObjcReorderDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B4D6B7723321D9E00273826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B4D6B5C23321D9E00273826 /* ObjcReorderDemo */;
+			targetProxy = 3B4D6B7623321D9E00273826 /* PBXContainerItemProxy */;
+		};
+		3B4D6B8223321D9F00273826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B4D6B5C23321D9E00273826 /* ObjcReorderDemo */;
+			targetProxy = 3B4D6B8123321D9F00273826 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B4D6B6623321D9E00273826 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B4D6B6723321D9E00273826 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B4D6B6B23321D9E00273826 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B4D6B6C23321D9E00273826 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B4D6B8723321D9F00273826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3B4D6B8823321D9F00273826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B4D6B8A23321D9F00273826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EABC8656E6A0DBDEC822F5F /* Pods-ObjcReorderDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QRC4FX2BPZ;
+				INFOPLIST_FILE = ObjcReorderDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.weirdyu.ObjcReorderDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B4D6B8B23321D9F00273826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D30A771800C11003A60FAB8 /* Pods-ObjcReorderDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QRC4FX2BPZ;
+				INFOPLIST_FILE = ObjcReorderDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.weirdyu.ObjcReorderDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3B4D6B8D23321D9F00273826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QRC4FX2BPZ;
+				INFOPLIST_FILE = ObjcReorderDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.weirdyu.ObjcReorderDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjcReorderDemo.app/ObjcReorderDemo";
+			};
+			name = Debug;
+		};
+		3B4D6B8E23321D9F00273826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QRC4FX2BPZ;
+				INFOPLIST_FILE = ObjcReorderDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.weirdyu.ObjcReorderDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjcReorderDemo.app/ObjcReorderDemo";
+			};
+			name = Release;
+		};
+		3B4D6B9023321D9F00273826 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QRC4FX2BPZ;
+				INFOPLIST_FILE = ObjcReorderDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.weirdyu.ObjcReorderDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ObjcReorderDemo;
+			};
+			name = Debug;
+		};
+		3B4D6B9123321D9F00273826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QRC4FX2BPZ;
+				INFOPLIST_FILE = ObjcReorderDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.weirdyu.ObjcReorderDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ObjcReorderDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B4D6B5823321D9E00273826 /* Build configuration list for PBXProject "ObjcReorderDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B4D6B8723321D9F00273826 /* Debug */,
+				3B4D6B8823321D9F00273826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B4D6B8923321D9F00273826 /* Build configuration list for PBXNativeTarget "ObjcReorderDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B4D6B8A23321D9F00273826 /* Debug */,
+				3B4D6B8B23321D9F00273826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B4D6B8C23321D9F00273826 /* Build configuration list for PBXNativeTarget "ObjcReorderDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B4D6B8D23321D9F00273826 /* Debug */,
+				3B4D6B8E23321D9F00273826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B4D6B8F23321D9F00273826 /* Build configuration list for PBXNativeTarget "ObjcReorderDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B4D6B9023321D9F00273826 /* Debug */,
+				3B4D6B9123321D9F00273826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B4D6B5523321D9E00273826 /* Project object */;
+}
