@@ -23,7 +23,7 @@ Written in Objective-C, translated from [swift version](https://github.com/adams
 ```
 - (void)setupSubviews
 {
-		//...
+    //...
     tableView.reorder.delegate = self;
 }
 ```
@@ -48,7 +48,7 @@ Written in Objective-C, translated from [swift version](https://github.com/adams
 ```
 - (void)tableView:(UITableView *)tableView reorderRowAtSource:(NSIndexPath *)source toDestination:(NSIndexPath *)destination
 {
-	// Update data model
+    // Update data model
 }
 ```
 
@@ -68,5 +68,3 @@ Or adjust the shadow:
 tableView.reorder.shadowOpacity = 0.5
 tableView.reorder.shadowRadius = 20
 ```
-
-
