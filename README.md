@@ -5,7 +5,7 @@ Written in Objective-C, translated from [swift version](https://github.com/adams
 
 ## Preview
 
-![img](https://github.com/weirdyu/XLPopup/blob/master/Preview.gif)
+![img](https://github.com/weirdyu/ObjcReorder/blob/master/demo.gif)
 
 ## Features
 
