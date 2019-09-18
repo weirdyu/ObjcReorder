@@ -96,12 +96,4 @@
     return destination;
 }
 
-- (void)tableView:(UITableView *)tableView didBeginReorderingAtSource:(NSIndexPath *)source
-{
-}
-
-- (void)tableView:(UITableView *)tableView didFinishReorderingAtSource:(NSIndexPath *)source toFinalDestinationIndexPath:(NSIndexPath *)indexPath
-{
-}
-
 @end

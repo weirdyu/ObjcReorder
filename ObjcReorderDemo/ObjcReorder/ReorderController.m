@@ -102,9 +102,7 @@
     CGPoint tableTouchPosition = [superview convertPoint:touchPosition toView:self.tableView];
     NSIndexPath *sourceRow = [self.tableView indexPathForRowAtPoint:tableTouchPosition];
     BOOL canReorder = [self.delegate tableView:self.tableView canReorderRowAtSource:sourceRow];
-    if (!canReorder) {
-        return;
-    }
+    if (!canReorder) return;
 
     [self createSnapshotViewForCell:sourceRow];
     [self animateSnapshotViewIn];
@@ -119,7 +117,9 @@
     context.touchPosition = touchPosition;
     [self.reorderState setupStateType:ReorderStateTypeReordering context:context];
 
-    [self.delegate tableView:self.tableView didBeginReorderingAtSource:sourceRow];
+    if ([self.delegate respondsToSelector:@selector(tableView:didBeginReorderingAtSource:)]) {    
+        [self.delegate tableView:self.tableView didBeginReorderingAtSource:sourceRow];
+    }
 }
 
 - (void)updateReorder:(CGPoint)touchPosition
@@ -160,7 +160,10 @@
     
     [self animateSnapshotViewOut];
     [self clearAutoScrollDisplayLink];
-    [self.delegate tableView:self.tableView didFinishReorderingAtSource:self.reorderState.context.sourceRow toFinalDestinationIndexPath:self.reorderState.context.destinationRow];
+    
+    if ([self.delegate respondsToSelector:@selector(tableView:didFinishReorderingAtSource:toFinalDestinationIndexPath:)]) {    
+        [self.delegate tableView:self.tableView didFinishReorderingAtSource:self.reorderState.context.sourceRow toFinalDestinationIndexPath:self.reorderState.context.destinationRow];
+    }
 }
 
 #pragma mark - Private Method

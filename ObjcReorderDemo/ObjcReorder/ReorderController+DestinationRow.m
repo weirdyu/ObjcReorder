@@ -22,7 +22,9 @@
     NSIndexPath *oldDestinationRow = self.reorderState.context.destinationRow;
     self.reorderState.context.destinationRow = newDestinationRow;
     
-    [self.delegate tableView:self.tableView reorderRowAtSource:oldDestinationRow toDestination:self.reorderState.context.destinationRow];
+    if ([self.delegate respondsToSelector:@selector(tableView:reorderRowAtSource:toDestination:)]) {
+        [self.delegate tableView:self.tableView reorderRowAtSource:oldDestinationRow toDestination:self.reorderState.context.destinationRow];
+    }
     
     [self.tableView beginUpdates];
     [self.tableView deleteRowsAtIndexPaths:@[oldDestinationRow] withRowAnimation:UITableViewRowAnimationFade];

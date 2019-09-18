@@ -21,12 +21,14 @@ typedef NS_ENUM(NSInteger, ReorderSpacerCellStyle) {
 
 @protocol TableViewReorderDelegate <NSObject>
 
+@required
 - (void)tableView:(UITableView *)tableView reorderRowAtSource:(NSIndexPath *)source toDestination:(NSIndexPath *)destination;
 
 - (BOOL)tableView:(UITableView *)tableView canReorderRowAtSource:(NSIndexPath *)source;
 
 - (NSIndexPath *)tableView:(UITableView *)tableView targetIndexPathForReorderFromRowAtSource:(NSIndexPath *)source toProposedDestinationIndexPath:(NSIndexPath *)destination;
 
+@optional
 - (void)tableView:(UITableView *)tableView didBeginReorderingAtSource:(NSIndexPath *)source;
 
 - (void)tableView:(UITableView *)tableView didFinishReorderingAtSource:(NSIndexPath *)source toFinalDestinationIndexPath:(NSIndexPath *)indexPath;
