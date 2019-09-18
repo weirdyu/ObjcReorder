@@ -7,6 +7,7 @@
 //
 
 #import "ReorderController+DestinationRow.h"
+#import "ReorderController+GestureRecognizer.h"
 
 @implementation ReorderController (DestinationRow)
 
@@ -27,6 +28,10 @@
     [self.tableView deleteRowsAtIndexPaths:@[oldDestinationRow] withRowAnimation:UITableViewRowAnimationFade];
     [self.tableView insertRowsAtIndexPaths:@[self.reorderState.context.destinationRow] withRowAnimation:UITableViewRowAnimationFade];
     [self.tableView endUpdates];
+    
+    if (oldDestinationRow != self.reorderState.context.destinationRow) {
+        [self impactFeedback];
+    }
 }
 
 - (NSIndexPath *)proposedNewDestinationRow

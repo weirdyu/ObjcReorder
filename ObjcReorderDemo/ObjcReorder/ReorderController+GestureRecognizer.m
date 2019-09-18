@@ -21,6 +21,7 @@
     switch (gestureRecognizer.state) {
         case UIGestureRecognizerStateBegan:
             [self beginReorder:touchPosition];
+            [self impactFeedback];
             break;
         case UIGestureRecognizerStateChanged:
             [self updateReorder:touchPosition];
@@ -29,9 +30,19 @@
         case UIGestureRecognizerStateFailed:
         case UIGestureRecognizerStatePossible:
             [self endReorder];
+            [self impactFeedback];
             break;
         default:
             break;
+    }
+}
+
+- (void)impactFeedback
+{
+    if (@available(iOS 10.0, *)) {
+        UIImpactFeedbackGenerator *generator = [[UIImpactFeedbackGenerator alloc] initWithStyle: UIImpactFeedbackStyleLight];
+        [generator prepare];
+        [generator impactOccurred];
     }
 }
 

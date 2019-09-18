@@ -162,19 +162,19 @@
 		3B4D6B9223321E2900273826 /* ObjcReorder */ = {
 			isa = PBXGroup;
 			children = (
-				3B4D6B9323321E2900273826 /* ReorderController.h */,
 				3B4D6B9423321E2900273826 /* ObjcReorder.h */,
+				3B4D6B9823321E2900273826 /* UITableView+Reorder.h */,
+				3B4D6B9C23321E2900273826 /* UITableView+Reorder.m */,
+				3B4D6B9323321E2900273826 /* ReorderController.h */,
+				3B4D6B9A23321E2900273826 /* ReorderController.m */,
+				3B4D6B9F23321E2900273826 /* ReorderController+GestureRecognizer.h */,
+				3B4D6B9923321E2900273826 /* ReorderController+GestureRecognizer.m */,
+				3B4D6B9B23321E2900273826 /* ReorderController+DestinationRow.h */,
 				3B4D6B9523321E2900273826 /* ReorderController+DestinationRow.m */,
 				3B4D6B9623321E2900273826 /* ReorderController+SnapShotView.m */,
-				3B4D6B9723321E2900273826 /* ReorderController+AutoScroll.h */,
-				3B4D6B9823321E2900273826 /* UITableView+Reorder.h */,
-				3B4D6B9923321E2900273826 /* ReorderController+GestureRecognizer.m */,
-				3B4D6B9A23321E2900273826 /* ReorderController.m */,
-				3B4D6B9B23321E2900273826 /* ReorderController+DestinationRow.h */,
-				3B4D6B9C23321E2900273826 /* UITableView+Reorder.m */,
 				3B4D6B9D23321E2900273826 /* ReorderController+SnapShotView.h */,
+				3B4D6B9723321E2900273826 /* ReorderController+AutoScroll.h */,
 				3B4D6B9E23321E2900273826 /* ReorderController+AutoScroll.m */,
-				3B4D6B9F23321E2900273826 /* ReorderController+GestureRecognizer.h */,
 			);
 			path = ObjcReorder;
 			sourceTree = "<group>";

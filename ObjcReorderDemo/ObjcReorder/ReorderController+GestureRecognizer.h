@@ -12,4 +12,6 @@
 
 - (void)handleReorderGesture:(UIGestureRecognizer *)gestureRecognizer;
 
+- (void)impactFeedback;
+
 @end
