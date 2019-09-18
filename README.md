@@ -13,7 +13,7 @@ Written in Objective-C, translated from [swift version](https://github.com/adams
 - Automatic edge scrolling
 - Works with multiple table sections
 - Customizable shadow, scaling, and transparency effects
-- impact Feedback
+- Impact Feedback
 
 ## Usage
 
